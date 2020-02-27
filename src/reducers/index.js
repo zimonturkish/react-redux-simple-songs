@@ -1,5 +1,3 @@
-import { act } from "react-dom/test-utils";
-
 const songsReducer = () => {
   return [
     { title: "Life on Mars", duration: "4:10" },
