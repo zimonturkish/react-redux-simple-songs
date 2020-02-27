@@ -1,3 +1,5 @@
+import { combineReducers } from "redux";
+
 const songsReducer = () => {
   return [
     { title: "Life on Mars", duration: "4:10" },
@@ -11,4 +13,5 @@ const selectedSongReducer = (selectedSong = null, action) => {
   if (action.type === "SONG_SELCETED") {
     return action.payload;
   }
+  return selectedSong;
 };
